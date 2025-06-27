@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   <div class="login-container"></div>
+        <h1 id="main-heading">E-Commerce Chatbot</h1>
+       <!--login form-->
+        <div id="loginForm">
+            <h3>Login To continue</h3>
+            <input type="text" name="username" id="username" placeholder="Username" />
+            <input type="password" name="password" id="password" placeholder="Password" />
+            <button id="login" onclick="login()">Login</button>
+            <p id="loginError" style="color: red;"></p>
+        </div>
+    </div>
+    
+
+    <div id="chatSection" style="display: none;">
+        <!--using this div we will only show the login form
+        and when the user logs in then only he/she can use the chatbot-->
+
+        <button onclick="logout()" id="logoutBtn">Logout</button>
+
+        <!--output (reply of the bot)-->
+        <div id="chatbox"></div>
+
+        <!--input (user query)-->
+        <input type="text" id="userInput" placeholder="Ask about a product...." />
+        <button id="send" onclick="sendMessage()">Send</button>
+
+        <h3><b>Note:- </b> Only those product name which are already stored in prducts.json file can be given as output
+        </h3>
+    </div>
+
+    <!-- always remember to run the app.py file before running the index.html file to get the desired output -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

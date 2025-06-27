@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, #1e005a, #9a2eff);
+    background-image: url('scenery.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+#main-heading {
+   font-size: 3rem;
+   color: #ffffff;
+   text-align: center;
+   margin-bottom: 30px;
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); 
+   letter-spacing: 1.2px;
+   position: absolute;
+   top: 20px;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 1000;
+}
+
+#chatbox{
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    height: 400px;
+    padding: 10px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    backdrop-filter: blur(8px);
+    color: #E0F2F7;
+}
+
+.user{
+    color:#F0F8FF;
+    margin-bottom: 10px;
+}
+#userInput{
+    padding: 12px 18px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #F0F0F0;
+    backdrop-filter: blur(20px);
+    font-size: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#userInput:focus {
+    border-color: #00c6ff;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 198, 255, 0.5);
+}
+
+#send {
+    background: linear-gradient(to right, #7b9edb, #93aade);
+    color: #F0F8FF;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#send:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* #chatSection{
+    border: 2px dashed #444;
+    padding: 10px;
+} */
+
+
+#loginForm h2{
+    margin-bottom: 25px;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+#loginForm{
+   background: rgba(255, 255, 255, 0.05);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   backdrop-filter: blur(10px);
+   padding: 40px 30px;
+   border-radius: 16px;
+   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+   width: 100%;
+   max-width: 400px;
+   text-align: center;
+   color: #333333;
+}
+
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #333333;
+    font-size: 14px;
+    outline: none;
+}
+
+#loginForm input::placeholder {
+    color: #333333;
+}
+
+#login {
+    margin-top: 20px;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    font-size: 17px;
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    color: #2b1055;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+#loginForm input[type="submit"]:hover {
+    background-color: linear-gradient(to right, #fbc2eb, #a18cd1);
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+#loginError {
+    color: #ff4f4f;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  #loginForm {
+    padding: 30px 20px;
+  }
+
+  #loginForm h2 {
+    font-size: 22px;
+  }
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#logoutBtn{
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(150, 160, 170, 0.6);
+    color: #333333;
+    padding: 8px 15px;
+    border-radius: 10px;
+    font-size: 14px;    
+}
+
+#logoutBtn:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-color: rgba(100, 110, 120, 0.8);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
