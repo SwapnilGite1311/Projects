@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "iPhone 13",
+        "brand": "Apple",
+        "price": 699.99
+    },
+    {
+        "id":2,
+        "name": "Galaxy S22",
+        "brand": "Samsung",
+        "price": 599
+    },
+    {
+        "id": 1,
+        "name": "Redmi Note 12",
+        "brand": "Xiaomi",
+        "price": 199
+    }
+]

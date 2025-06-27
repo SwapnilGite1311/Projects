@@ -1,0 +1,14 @@
+[
+    {
+        "username": "swapnil",
+        "password": "12345"
+    },
+    {
+        "username": "admin",
+        "password": "admin"
+    },
+    {
+        "username": "testuser",
+        "password": "test123"
+    }
+]
